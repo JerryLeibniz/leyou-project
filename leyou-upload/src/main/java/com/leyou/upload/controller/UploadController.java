@@ -38,7 +38,7 @@ public class UploadController {
             //如果url为空则上传失败
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
-        //返回200并携带图片url路径
+        //返回200,并且携带图片url路径
         return ResponseEntity.ok(url);
     }
 
